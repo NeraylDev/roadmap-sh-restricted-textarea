@@ -1,0 +1,36 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textarea-container {
+    width: 16em;
+    height: 8em;
+    position: relative;
+}
+
+#textarea-container textarea {
+    min-width: 100%;
+    min-height: 100%;
+    resize: none;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+#textarea-container.limit-reached {
+    textarea { outline-color: red; border-color: red;}
+    #char-count { color: red; }
+}
+
+#char-count {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
